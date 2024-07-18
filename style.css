@@ -1,0 +1,104 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+:root{
+    --text:1.5rem;
+    --head:calc(1rem + 5vw);
+}
+
+body{
+    font-family: "poppins", sans-serif;
+}
+
+.hero-section{
+    width: 100%;
+    min-height: 150vh;
+    background: url(https://media.istockphoto.com/id/663290162/photo/vegetarian-stew-with-chickpeas.jpg?s=612x612&w=0&k=20&c=xzf98TWYHAirWN2VJAIJrTB9vnyLEn-hJLBuGQ1Q4yw=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
+
+ .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:10vh;
+    padding: 0 5%;
+    color:orangered;
+ }
+
+ .navbar ul{
+    list-style: none;
+ }
+
+ .navbar ul li{
+    display: inline-block;
+    margin-left: 3em;
+    font-size: var(--text);
+    font-weight: 400;
+ }
+
+ .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    font-weight: 400;
+}
+
+.navbar ul li a:hover{
+     border-bottom: 2px solid #fff;
+}
+
+ .content::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    top:0;
+    opacity:0.3;
+ }
+
+ .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: #fff;
+ }
+
+ .content a:hover{
+    opacity: 0.8;
+ }
+
+ .content h2{
+    font-size: 80px;
+ }
+
+ .content p{
+    font-size: 3rem;
+ }
+
+ .content a{
+    text-decoration: none;
+    color: #fff;
+    background-color:red;
+    border-radius: 0.1rem;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 0.8rem 1 rem;
+    margin: 0.8rem;
+    display: block;
+    transition: opacity 0.5s ease;
+ }
+
+ 
